@@ -8,7 +8,6 @@
 
 import SpriteKit
 import GameplayKit
-import UIKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     var scoreLabel: SKLabelNode!
@@ -25,7 +24,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         didSet {
             if editingMode {
                 editLabel.text = "Done"
-            } else {
+            }
+            
+            else {
                 editLabel.text = "Edit"
             }
         }
@@ -86,6 +87,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                     
                     addChild(box)
                 }
+                    
                 else  {
                     let ball = SKSpriteNode(imageNamed: "ballRed")
                     ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
@@ -117,6 +119,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             slotGlow = SKSpriteNode(imageNamed: "slotGlowGood")
             slotBase.name = "good"
         }
+            
         else {
             slotBase = SKSpriteNode(imageNamed: "slotBaseBad")
             slotGlow = SKSpriteNode(imageNamed: "slotGlowBad")
@@ -142,7 +145,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if object.name == "good" {
             destroyBall(ball)
             ++score
-        } else if object.name == "bad" {
+        }
+        
+        else if object.name == "bad" {
             destroyBall(ball)
             --score
         }
@@ -155,7 +160,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func didBeginContact(contact: SKPhysicsContact) {
         if contact.bodyA.node!.name == "ball" {
             collisionBetweenBall(contact.bodyA.node!, object: contact.bodyB.node!)
-        } else if contact.bodyB.node!.name == "ball" {
+        }
+        
+        else if contact.bodyB.node!.name == "ball" {
             collisionBetweenBall(contact.bodyB.node!, object: contact.bodyA.node!)
         }
     }

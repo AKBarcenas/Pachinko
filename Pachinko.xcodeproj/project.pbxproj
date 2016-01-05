@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAC4C4C51C3BB10D007CD52A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4C4C41C3BB10D007CD52A /* Helper.swift */; };
 		FACE14AD1C382A9100F41CC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE14AC1C382A9100F41CC1 /* AppDelegate.swift */; };
 		FACE14AF1C382A9100F41CC1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FACE14AE1C382A9100F41CC1 /* GameScene.sks */; };
 		FACE14B11C382A9100F41CC1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE14B01C382A9100F41CC1 /* GameScene.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FAC4C4C41C3BB10D007CD52A /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		FACE14A91C382A9100F41CC1 /* Pachinko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pachinko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACE14AC1C382A9100F41CC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FACE14AE1C382A9100F41CC1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				FACE14AE1C382A9100F41CC1 /* GameScene.sks */,
 				FACE14B01C382A9100F41CC1 /* GameScene.swift */,
 				FACE14B21C382A9100F41CC1 /* GameViewController.swift */,
+				FAC4C4C41C3BB10D007CD52A /* Helper.swift */,
 				FACE14B41C382A9100F41CC1 /* Main.storyboard */,
 				FACE14C21C382D7B00F41CC1 /* Content */,
 				FACE14B71C382A9100F41CC1 /* Assets.xcassets */,
@@ -266,6 +269,7 @@
 				FACE14B11C382A9100F41CC1 /* GameScene.swift in Sources */,
 				FACE14B31C382A9100F41CC1 /* GameViewController.swift in Sources */,
 				FACE14AD1C382A9100F41CC1 /* AppDelegate.swift in Sources */,
+				FAC4C4C51C3BB10D007CD52A /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +419,7 @@
 				FACE14C11C382A9100F41CC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
